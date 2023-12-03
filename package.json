@@ -6,12 +6,14 @@
   "repository": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "e2e": "cypress open"
   },
   "keywords": [],
   "author": "Josh Justice, Ken Ingram <ken.ingram@gmail.com>",
   "license": "Apache-2.0",
   "devDependencies": {
+    "cypress": "^13.6.0",
     "parcel-bundler": "^1.12.5"
   },
   "dependencies": {
