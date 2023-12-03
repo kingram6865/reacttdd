@@ -1,0 +1,21 @@
+{
+  "name": "react-tdd-livestream",
+  "version": "0.0.1",
+  "description": "A tutorial following along with Josh Justice from https://codingitwrong.com.",
+  "main": "index.js",
+  "repository": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html"
+  },
+  "keywords": [],
+  "author": "Josh Justice, Ken Ingram <ken.ingram@gmail.com>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
