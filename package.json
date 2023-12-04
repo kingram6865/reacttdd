@@ -15,7 +15,9 @@
   "author": "Josh Justice, Ken Ingram <ken.ingram@gmail.com>",
   "license": "Apache-2.0",
   "devDependencies": {
+    "@babel/core": "^7.23.5",
     "@babel/eslint-parser": "^7.23.3",
+    "@babel/plugin-transform-class-properties": "^7.23.3",
     "@babel/preset-env": "^7.23.5",
     "@babel/preset-react": "^7.23.3",
     "@testing-library/jest-dom": "^6.1.5",

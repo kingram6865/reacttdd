@@ -158,3 +158,22 @@ CRLF issue: https://stackoverflow.com/a/66933780/1418533
 ```
 yarn add --dev @babel/eslint-parser
 ```
+
+https://stackoverflow.com/a/63177410/1418533
+
+```
+yarn add @babel/plugin-transform-class-properties --dev
+```
+
+Create babel.config.json As described [here](https://babeljs.io/docs/babel-preset-react)
+
+```json
+{
+  "presets": [
+    "@babel/preset-env",
+    ["@babel/preset-react", {"runtime": "automatic"}]
+  ]
+}
+```
+
+Without `{"runtime": "automatic"}` there will be an error:  `"ReferenceError: React is not defined"`

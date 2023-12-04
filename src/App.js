@@ -1,7 +1,9 @@
 import React from 'react'
 
 export default class App extends React.Component {
+  state = { name: 'viewers'}
+
   render() {
-    return <div data-testid="hello">Hello World</div>
+    return <div className="hello" data-testid="hello">Hello {this.state.name}</div>
   }
 }
