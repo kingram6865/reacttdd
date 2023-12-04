@@ -5,11 +5,10 @@
   "main": "index.js",
   "repository": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint cypress/**/*.js src/**/*.js test/**/*.js",
     "start": "parcel index.html",
+    "lint": "eslint cypress/**/*.js src/**/*.js test/**/*.js",
     "e2e": "cypress open",
-    "unit": "jest test/**/*.spec.js"
+    "unit": "jest test/unit"
   },
   "keywords": [],
   "author": "Josh Justice, Ken Ingram <ken.ingram@gmail.com>",
