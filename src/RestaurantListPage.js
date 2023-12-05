@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Button } from 'react-materialize'
 import NewRestaurantForm from './NewRestaurantForm'
 import RestaurantList from './RestaurantList'
 
@@ -29,10 +30,10 @@ export default class RestaurantListPage extends Component {
     } = this.state
     return (
       <div>
-        <button 
+        <Button 
           data-testid="addRestaurantButton"
           onClick={this.handleShowNewRestaurantForm}
-        >Add Restaurant</button>
+        >Add Restaurant</Button>
         {
           showNewRestaurantForm
           ? (<NewRestaurantForm 

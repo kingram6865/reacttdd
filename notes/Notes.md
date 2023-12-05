@@ -186,3 +186,7 @@ Without `{"runtime": "automatic"}` there will be an error:  `"ReferenceError: Re
 
 Completed #1 2023 12 03 2000
 #2 2023 12 04 2000 PST
+
+# Part 3: Refactor to Not Ugly
+
+Materialize is [here](https://materializecss.com/)
