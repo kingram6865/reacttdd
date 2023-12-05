@@ -15,6 +15,7 @@ export default class NewRestaurantForm extends Component {
 
   render() {
     const { inputText } = this.state
+    // return null; 
     return(
       <div>
         <input 
