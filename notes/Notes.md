@@ -1,21 +1,25 @@
 # Notes while following along
 
+[Youtube Playlist](https://www.youtube.com/watch?v=6t1tAyKaAKM&list=PLXXnezSEtvNMlfJFd1Z2wilxymcOaVl9Q&index=1)
+
 This tutorial is FIVE years, 2 months old as of 2023-12-03. Some details are obsolete
 - Enzyme is no longer used for React component testing.
 
 ## Unit and component tests
-Josh uses Jest and Mocha although mocha is older
-Enzyme for React components
+Josh uses 
+
+- Jest and Mocha for unit tests although mocha is older.
+- Enzyme for React components
 
 Mocha-Chai-Sinon takes a bit of setup
+
 Cypress and Jest is easier for beginners
 
-- Josh has learned to do outside-in testing, End to end for the whole app and unit/component testing.
+- Josh has learned to do outside-in testing, End-to-end for the whole app and unit/component testing.
 
 ### Have to replace Enzyme for React component testing
 
-At this point we are still in tool setup and since the material is obsolete in terms of this aspect of tooling,
-we will be sidetracked to set up the alternative to Enzyme.
+All of [Livestream 1](https://www.youtube.com/watch?v=6t1tAyKaAKM&list=PLXXnezSEtvNMlfJFd1Z2wilxymcOaVl9Q&index=1) is tool setup and since the material is obsolete in terms of this aspect of tooling, we will be sidetracked to set up the alternative to Enzyme.
 
 React is at version 18.* and Enzyme last worked with React v16.*
 
@@ -177,3 +181,8 @@ Create babel.config.json As described [here](https://babeljs.io/docs/babel-prese
 ```
 
 Without `{"runtime": "automatic"}` there will be an error:  `"ReferenceError: React is not defined"`
+
+# Lessons
+
+Completed #1 2023 12 03 2000
+#2 2023 12 04 2000 PST
