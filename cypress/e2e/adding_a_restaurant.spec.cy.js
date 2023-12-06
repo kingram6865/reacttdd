@@ -6,7 +6,7 @@ describe('adding a restaurant', () => {
     cy.get('[data-testid=newRestaurantName]').should('not.exist') 
     cy.get('[data-testid=addRestaurantButton]').click();
     cy.get('[data-testid=newRestaurantName]').type(restaurantName)
-    cy.get('button[data-testid=saveNewRestaurantButton]').click()
+    cy.get('[data-testid=saveNewRestaurantButton]').click()
     cy.get('[data-testid=newRestaurantName]').should('not.exist') 
 
     cy.contains(restaurantName)

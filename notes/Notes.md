@@ -189,6 +189,7 @@ Completed #1 2023 12 03 2000
 
 # Part 3: Refactor to Not Ugly
 
-Materialize is [here](https://materializecss.com/)
+[React Materialize](https://react-materialize.github.io/react-materialize/?path=/story/react-materialize--welcome)
+Materialize CSS is [here](https://materializecss.com/)
 
 Tests are more important to check behavior, not styling.
