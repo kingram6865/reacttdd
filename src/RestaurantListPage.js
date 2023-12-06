@@ -30,18 +30,25 @@ export default class RestaurantListPage extends Component {
     } = this.state
     return (
       <div>
-        <Button 
-          data-testid="addRestaurantButton"
-          onClick={this.handleShowNewRestaurantForm}
-        >Add Restaurant</Button>
-        {
-          showNewRestaurantForm
-          ? (<NewRestaurantForm 
-            onSave={this.handleAddRestaurant}
-          />)
-          : null
-        }
-        <RestaurantList restaurantNames={restaurantNames} />
+        <div className="row">
+          <Button 
+            className="s12 m8 l10"
+            data-testid="addRestaurantButton"
+            onClick={this.handleShowNewRestaurantForm}
+          >Add Restaurant</Button>
+        </div>
+        <div className="row">
+          {
+            showNewRestaurantForm
+            ? (<NewRestaurantForm 
+              onSave={this.handleAddRestaurant}
+            />)
+            : null
+          }
+        </div>
+        <div className="row">
+          <RestaurantList restaurantNames={restaurantNames} />
+        </div>
       </div>
     )
   }

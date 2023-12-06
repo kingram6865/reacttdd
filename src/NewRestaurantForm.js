@@ -18,20 +18,23 @@ export default class NewRestaurantForm extends Component {
     const { inputText } = this.state
     return(
       <div>
-        <div className="input-field col s6">
+        <div className="input-field row">
         <input
-          id="restaurant_name" 
-          placeholder="Placeholder"
-          value={inputText}
-          onChange={this.handleTextChange}
-          data-testid="newRestaurantName"
-        />
-        <label htmlFor="restaurant_name">Restaurant Name</label>
+            className="col s12 m8 l10"
+            id="restaurant_name" 
+            placeholder="Restaurant Name"
+            value={inputText}
+            onChange={this.handleTextChange}
+            data-testid="newRestaurantName"
+          />
+          
+          
+          <Button
+            className="col s2 m2 l2"
+            data-testid="saveNewRestaurantButton"
+            onClick={this.handleSave}
+          >Save</Button>
         </div>
-        <Button 
-          data-testid="saveNewRestaurantButton"
-          onClick={this.handleSave}
-        >Save</Button>
       </div>
     )
   }
