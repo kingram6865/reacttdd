@@ -2,13 +2,20 @@ import React from 'react'
 import { Collection, CollectionItem } from 'react-materialize'
 
 const RestaurantList = ({ restaurantNames }) => (
-  <Collection>
+  <ul className="collection with-header">
+    <li className="collection-header"><h4>Restaurants</h4></li>
+    {
+      restaurantNames.length === 0
+      && <li className="collection-item" key="no-restaurant">(None Added Yet)</li> 
+
+    }
+    
     {
       restaurantNames.map(restaurantName => (
-        <CollectionItem key={restaurantName}>{restaurantName}</CollectionItem>
+        <li className="collection-item" key={restaurantName}>{restaurantName}</li>
       ))
     }
-  </Collection>
+  </ul>
 );
 
 export default RestaurantList

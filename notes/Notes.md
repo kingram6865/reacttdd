@@ -190,3 +190,5 @@ Completed #1 2023 12 03 2000
 # Part 3: Refactor to Not Ugly
 
 Materialize is [here](https://materializecss.com/)
+
+Tests are more important to check behavior, not styling.
