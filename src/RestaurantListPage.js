@@ -1,5 +1,10 @@
 import React, { Component } from 'react'
-import { Button } from 'react-materialize'
+import { 
+  Button, 
+  Col,
+  Row,
+  Modal 
+} from 'react-materialize'
 import NewRestaurantForm from './NewRestaurantForm'
 import RestaurantList from './RestaurantList'
 
@@ -23,25 +28,33 @@ export default class RestaurantListPage extends Component {
     }))
   }
 
+  renderNewRestaurantForm () {
+    if (this.state.showNewRestaurantForm) {
+      return (<NewRestaurantForm 
+        onSave={this.handleAddRestaurant}
+       />
+      );
+    }
+  }
+  
   render() {
     const { 
       restaurantNames, 
-      showNewRestaurantForm 
     } = this.state
     return (
       <div>
+        <Row>
         <Button 
-          data-testid="addRestaurantButton"
-          onClick={this.handleShowNewRestaurantForm}
-        >Add Restaurant</Button>
-        {
-          showNewRestaurantForm
-          ? (<NewRestaurantForm 
-            onSave={this.handleAddRestaurant}
-          />)
-          : null
-        }
-        <RestaurantList restaurantNames={restaurantNames} />
+              data-testid="addRestaurantButton"
+              onClick={this.handleShowNewRestaurantForm}
+            >Add Restaurant</Button>
+        </Row>
+        <Row>
+          {this.renderNewRestaurantForm()}
+        </Row>
+        <Row>
+          <RestaurantList restaurantNames={restaurantNames} />
+        </Row>
       </div>
     )
   }

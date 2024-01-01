@@ -1,15 +1,16 @@
 import React from 'react'
 import RestaurantListPage from './RestaurantListPage'
+import { Col, Row } from 'react-materialize'
 
 export default class App extends React.Component {
 
   render() {
-    return <div>
-      <div className="row">
-        <div className="col s12 m10 l8 xl4 offset-m1 offset-l2 offset-xl-4">
+    return (
+      <Row>
+        <Col s={12} m={10} l={8} xl={6} offset="m1 l2 xl3">
           <RestaurantListPage />
-        </div>
-      </div>
-    </div>
+        </Col>
+      </Row>
+    );
   }
 }
