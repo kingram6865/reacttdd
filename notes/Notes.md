@@ -187,9 +187,18 @@ Without `{"runtime": "automatic"}` there will be an error:  `"ReferenceError: Re
 Completed #1 2023 12 03 2000
 #2 2023 12 04 2000 PST
 
-# Part 3: Refactor to Not Ugly
+## Part 3: Refactor to Not Ugly
 
 [React Materialize](https://react-materialize.github.io/react-materialize/?path=/story/react-materialize--welcome)
 Materialize CSS is [here](https://materializecss.com/)
 
 Tests are more important to check behavior, not styling.
+
+Some of the components have changed since the live stream (5 years is like a century in tech...)
+
+Part 3 Completed 2024 01 01 1615 PST
+
+## Part 4: CI and Cleanup
+
+Begin 2024 01 01 1700 PST
+
