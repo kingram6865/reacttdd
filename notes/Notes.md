@@ -198,7 +198,9 @@ Some of the components have changed since the live stream (5 years is like a cen
 
 Part 3 Completed 2024 01 01 1615 PST
 
-## Part 4: CI and Cleanup
+## Part 4: CI and Cleanup (https://www.youtube.com/watch?v=JRZObgoLF7I)
 
-Begin 2024 01 01 1700 PST
-
+Begin 2024 01 02 1930 PST
+--- Distractions (LHH Lives, too much youtube, gaming)
+Resume 2024 01 19 1500 PST
+  Set up Circle CI config (12:09 of 59:09)
